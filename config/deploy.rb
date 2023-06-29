@@ -21,7 +21,7 @@ set :deploy_to, "/var/www/HelloWorld"
 # set :pty, true
 
 # Default value for :linked_files is []
-# append :linked_files, "config/database.yml", 'config/master.key'
+append :linked_files, 'config/master.key'
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "tmp/webpacker", "public/system", "vendor", "storage"
@@ -38,3 +38,4 @@ set :deploy_to, "/var/www/HelloWorld"
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
+
