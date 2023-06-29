@@ -5,10 +5,10 @@ set :application, "HelloWorld"
 set :repo_url, "git@github.com:kiran-banmala/HelloWorld.git"
 
 # Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+ask :branch, :main
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+set :deploy_to, "/var/www/HelloWorld"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -27,8 +27,8 @@ set :repo_url, "git@github.com:kiran-banmala/HelloWorld.git"
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "tmp/webpacker", "public/system", "vendor", "storage"
 
 # Default value for default_env is {}
-set :rvm_ruby_version, "ruby-3.2.2"
-set :default_env, { rvm_bin_path: "/usr/share/rvm/bin" }
+# set :rvm_ruby_version, "ruby-3.2.2"
+# set :default_env, { rvm_bin_path: "/usr/share/rvm/bin" }
 
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }

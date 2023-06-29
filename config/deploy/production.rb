@@ -7,7 +7,11 @@ server "192.168.56.10", user: "vagrant", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
+set :rvm_type, :user
+set :rvm_ruby_version, "3.2.2"
+set :rvm_custom_path, "/usr/share/rvm"
 
+# set :puma_workers, 2
 
 # role-based syntax
 # ==================
