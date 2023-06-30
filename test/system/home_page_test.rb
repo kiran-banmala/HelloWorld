@@ -6,8 +6,8 @@ class HomePageTest < ApplicationSystemTestCase
     assert_selector 'h1', text: 'Hello World'
   end
 
-  # test "visiting home page again" do
-  #   visit root_path
-  #   assert_selector 'h1', text: 'Hello Hello'
-  # end
+  test "visiting home page again" do
+    visit root_path
+    assert_selector 'h1', text: 'Hello Hello'
+  end
 end
