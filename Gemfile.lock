@@ -88,9 +88,6 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
-    capistrano-secrets-yml (1.2.1)
-      capistrano (>= 3.10)
-      sshkit (>= 1.17.0)
     capybara (3.39.2)
       addressable
       matrix
@@ -242,7 +239,6 @@ DEPENDENCIES
   capistrano (~> 3.10)
   capistrano-rails (~> 1.6)
   capistrano-rvm
-  capistrano-secrets-yml
   capybara
   debug
   ed25519
