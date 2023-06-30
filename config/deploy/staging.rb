@@ -3,11 +3,13 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-# server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
+server "192.168.56.10", user: "vagrant", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-
+set :rvm_type, :user
+set :rvm_ruby_version, "3.2.2"
+set :rvm_custom_path, "/usr/share/rvm"
 
 # role-based syntax
 # ==================
